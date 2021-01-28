@@ -36,7 +36,7 @@ import (
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/types/known/durationpb"
 
-	"google.golang.org/grpc/credentials/sts"
+	"google.golang.org/grpc/v2/credentials/sts"
 )
 
 const (

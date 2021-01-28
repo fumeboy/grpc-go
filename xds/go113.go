@@ -21,5 +21,5 @@
 package xds
 
 import (
-	_ "google.golang.org/grpc/credentials/tls/certprovider/meshca" // Register the MeshCA certificate provider plugin.
+	_ "google.golang.org/grpc/v2/credentials/tls/certprovider/meshca" // Register the MeshCA certificate provider plugin.
 )

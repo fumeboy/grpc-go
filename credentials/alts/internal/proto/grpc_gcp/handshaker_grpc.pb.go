@@ -4,9 +4,9 @@ package grpc_gcp
 
 import (
 	context "context"
-	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
+	grpc "google.golang.org/grpc/v2"
+	codes "google.golang.org/grpc/v2/codes"
+	status "google.golang.org/grpc/v2/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file

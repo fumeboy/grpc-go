@@ -30,20 +30,20 @@ import (
 	"github.com/golang/protobuf/jsonpb"
 	wrapperspb "github.com/golang/protobuf/ptypes/wrappers"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/grpctest"
-	scpb "google.golang.org/grpc/internal/proto/grpc_service_config"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
-	"google.golang.org/grpc/xds/internal"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/client/load"
-	"google.golang.org/grpc/xds/internal/testutils/fakeclient"
+	"google.golang.org/grpc/v2/balancer"
+	"google.golang.org/grpc/v2/connectivity"
+	"google.golang.org/grpc/v2/internal/grpclog"
+	"google.golang.org/grpc/v2/internal/grpctest"
+	scpb "google.golang.org/grpc/v2/internal/proto/grpc_service_config"
+	"google.golang.org/grpc/v2/internal/testutils"
+	"google.golang.org/grpc/v2/resolver"
+	"google.golang.org/grpc/v2/serviceconfig"
+	"google.golang.org/grpc/v2/xds/internal"
+	xdsclient "google.golang.org/grpc/v2/xds/internal/client"
+	"google.golang.org/grpc/v2/xds/internal/client/load"
+	"google.golang.org/grpc/v2/xds/internal/testutils/fakeclient"
 
-	_ "google.golang.org/grpc/xds/internal/client/v2" // V2 client registration.
+	_ "google.golang.org/grpc/v2/xds/internal/client/v2" // V2 client registration.
 )
 
 const (

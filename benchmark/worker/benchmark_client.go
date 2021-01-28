@@ -26,17 +26,17 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/benchmark"
-	"google.golang.org/grpc/benchmark/stats"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/syscall"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/testdata"
+	"google.golang.org/grpc/v2"
+	"google.golang.org/grpc/v2/benchmark"
+	"google.golang.org/grpc/v2/benchmark/stats"
+	"google.golang.org/grpc/v2/codes"
+	"google.golang.org/grpc/v2/credentials"
+	"google.golang.org/grpc/v2/internal/syscall"
+	"google.golang.org/grpc/v2/status"
+	"google.golang.org/grpc/v2/testdata"
 
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
+	testgrpc "google.golang.org/grpc/v2/v2/interop/grpc_testing"
+	testpb "google.golang.org/grpc/v2/v2/interop/grpc_testing"
 )
 
 var caFile = flag.String("ca_file", "", "The file containing the CA root cert file")

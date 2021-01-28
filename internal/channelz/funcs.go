@@ -30,7 +30,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"google.golang.org/grpc/grpclog"
+	"google.golang.org/grpc/v2/grpclog"
 )
 
 const (

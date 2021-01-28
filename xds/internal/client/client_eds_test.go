@@ -32,8 +32,8 @@ import (
 	wrapperspb "github.com/golang/protobuf/ptypes/wrappers"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"google.golang.org/grpc/xds/internal"
-	"google.golang.org/grpc/xds/internal/version"
+	"google.golang.org/grpc/v2/xds/internal"
+	"google.golang.org/grpc/v2/xds/internal/version"
 )
 
 func (s) TestEDSParseRespProto(t *testing.T) {

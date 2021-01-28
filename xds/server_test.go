@@ -27,16 +27,16 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/credentials/tls/certprovider"
-	"google.golang.org/grpc/credentials/xds"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/testutils"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
-	xdstestutils "google.golang.org/grpc/xds/internal/testutils"
-	"google.golang.org/grpc/xds/internal/testutils/fakeclient"
+	"google.golang.org/grpc/v2"
+	"google.golang.org/grpc/v2/credentials/insecure"
+	"google.golang.org/grpc/v2/credentials/tls/certprovider"
+	"google.golang.org/grpc/v2/credentials/xds"
+	"google.golang.org/grpc/v2/internal/grpctest"
+	"google.golang.org/grpc/v2/internal/testutils"
+	xdsclient "google.golang.org/grpc/v2/xds/internal/client"
+	"google.golang.org/grpc/v2/xds/internal/client/bootstrap"
+	xdstestutils "google.golang.org/grpc/v2/xds/internal/testutils"
+	"google.golang.org/grpc/v2/xds/internal/testutils/fakeclient"
 )
 
 const (

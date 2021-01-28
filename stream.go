@@ -28,21 +28,21 @@ import (
 	"time"
 
 	"golang.org/x/net/trace"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/encoding"
-	"google.golang.org/grpc/internal/balancerload"
-	"google.golang.org/grpc/internal/binarylog"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpcrand"
-	"google.golang.org/grpc/internal/grpcutil"
-	iresolver "google.golang.org/grpc/internal/resolver"
-	"google.golang.org/grpc/internal/serviceconfig"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/peer"
-	"google.golang.org/grpc/stats"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpc/v2/balancer"
+	"google.golang.org/grpc/v2/codes"
+	"google.golang.org/grpc/v2/encoding"
+	"google.golang.org/grpc/v2/internal/balancerload"
+	"google.golang.org/grpc/v2/internal/binarylog"
+	"google.golang.org/grpc/v2/internal/channelz"
+	"google.golang.org/grpc/v2/internal/grpcrand"
+	"google.golang.org/grpc/v2/internal/grpcutil"
+	iresolver "google.golang.org/grpc/v2/internal/resolver"
+	"google.golang.org/grpc/v2/internal/serviceconfig"
+	"google.golang.org/grpc/v2/internal/transport"
+	"google.golang.org/grpc/v2/metadata"
+	"google.golang.org/grpc/v2/peer"
+	"google.golang.org/grpc/v2/stats"
+	"google.golang.org/grpc/v2/status"
 )
 
 // StreamHandler defines the handler called by gRPC server to complete the
@@ -1559,7 +1559,8 @@ func (ss *serverStream) Redirect(conn *ClientConn, fullMethodName string) error 
 	ErrChanA2B := redirectA2B(ss, redirectTo.(*clientStream))
 	ErrChanB2A := redirectB2A(redirectTo.(*clientStream), ss)
 	for i := 0; i < 2; i++ {
-		L:select {
+	L:
+		select {
 		case err = <-ErrChanA2B:
 			if err == io.EOF {
 				// success
@@ -1583,10 +1584,10 @@ func redirectA2B(src *serverStream, dst *clientStream) chan error {
 	ret := make(chan error, 1)
 	go func() {
 		for {
-			if _, data, err := src.p.recvMsg(src.maxReceiveMessageSize); err != nil{
+			if _, data, err := src.p.recvMsg(src.maxReceiveMessageSize); err != nil {
 				ret <- err
 				break
-			}else{
+			} else {
 				if err := dst.attempt.t.Write(dst.attempt.s, src.p.header[:], data, &transport.Options{Last: false}); err != nil {
 					ret <- err
 					break
@@ -1600,12 +1601,12 @@ func redirectA2B(src *serverStream, dst *clientStream) chan error {
 func redirectB2A(src *clientStream, dst *serverStream) chan error {
 	ret := make(chan error, 1)
 	go func() {
-		for i := 0;;i++{
-			if _, data, err := src.attempt.p.recvMsg(*src.callInfo.maxReceiveMessageSize); err != nil{
+		for i := 0; ; i++ {
+			if _, data, err := src.attempt.p.recvMsg(*src.callInfo.maxReceiveMessageSize); err != nil {
 				ret <- err
 				break
-			}else{
-				if i == 0{
+			} else {
+				if i == 0 {
 					md, err := src.Header()
 					if err != nil {
 						ret <- err
@@ -1616,7 +1617,7 @@ func redirectB2A(src *clientStream, dst *serverStream) chan error {
 						break
 					}
 				}
-				if err := dst.t.Write(dst.s, src.attempt.p.header[:], data,&transport.Options{Last: false}); err != nil {
+				if err := dst.t.Write(dst.s, src.attempt.p.header[:], data, &transport.Options{Last: false}); err != nil {
 					ret <- err
 					break
 				}

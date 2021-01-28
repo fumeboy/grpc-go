@@ -31,9 +31,9 @@ import (
 	"runtime"
 	"strings"
 
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/peer"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpc/v2/codes"
+	"google.golang.org/grpc/v2/peer"
+	"google.golang.org/grpc/v2/status"
 )
 
 const (

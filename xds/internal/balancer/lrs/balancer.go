@@ -24,11 +24,11 @@ import (
 	"fmt"
 	"sync"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/serviceconfig"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/client/load"
+	"google.golang.org/grpc/v2/balancer"
+	"google.golang.org/grpc/v2/internal/grpclog"
+	"google.golang.org/grpc/v2/serviceconfig"
+	xdsclient "google.golang.org/grpc/v2/xds/internal/client"
+	"google.golang.org/grpc/v2/xds/internal/client/load"
 )
 
 func init() {

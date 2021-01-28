@@ -26,15 +26,15 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"google.golang.org/grpc/internal/grpcsync"
+	"google.golang.org/grpc/v2/internal/grpcsync"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
-	xdstestutils "google.golang.org/grpc/xds/internal/testutils"
-	"google.golang.org/grpc/xds/internal/version"
+	"google.golang.org/grpc/v2"
+	"google.golang.org/grpc/v2/credentials/insecure"
+	"google.golang.org/grpc/v2/internal/grpctest"
+	"google.golang.org/grpc/v2/internal/testutils"
+	"google.golang.org/grpc/v2/xds/internal/client/bootstrap"
+	xdstestutils "google.golang.org/grpc/v2/xds/internal/testutils"
+	"google.golang.org/grpc/v2/xds/internal/version"
 )
 
 type s struct {

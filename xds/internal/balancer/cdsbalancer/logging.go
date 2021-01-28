@@ -21,8 +21,8 @@ package cdsbalancer
 import (
 	"fmt"
 
-	"google.golang.org/grpc/grpclog"
-	internalgrpclog "google.golang.org/grpc/internal/grpclog"
+	"google.golang.org/grpc/v2/grpclog"
+	internalgrpclog "google.golang.org/grpc/v2/internal/grpclog"
 )
 
 const prefix = "[cds-lb %p] "

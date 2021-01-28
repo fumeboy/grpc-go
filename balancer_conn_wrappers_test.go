@@ -23,11 +23,11 @@ import (
 	"net"
 	"testing"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/roundrobin"
-	"google.golang.org/grpc/internal/balancer/stub"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/resolver/manual"
+	"google.golang.org/grpc/v2/balancer"
+	"google.golang.org/grpc/v2/balancer/roundrobin"
+	"google.golang.org/grpc/v2/internal/balancer/stub"
+	"google.golang.org/grpc/v2/resolver"
+	"google.golang.org/grpc/v2/resolver/manual"
 )
 
 // TestBalancerErrorResolverPolling injects balancer errors and verifies

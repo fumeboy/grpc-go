@@ -34,14 +34,14 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/roundrobin"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/xds/internal/balancer/weightedtarget/weightedaggregator"
-	"google.golang.org/grpc/xds/internal/client/load"
-	"google.golang.org/grpc/xds/internal/testutils"
+	"google.golang.org/grpc/v2"
+	"google.golang.org/grpc/v2/balancer"
+	"google.golang.org/grpc/v2/balancer/roundrobin"
+	"google.golang.org/grpc/v2/connectivity"
+	"google.golang.org/grpc/v2/resolver"
+	"google.golang.org/grpc/v2/xds/internal/balancer/weightedtarget/weightedaggregator"
+	"google.golang.org/grpc/v2/xds/internal/client/load"
+	"google.golang.org/grpc/v2/xds/internal/testutils"
 )
 
 var (

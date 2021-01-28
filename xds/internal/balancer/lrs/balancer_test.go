@@ -25,14 +25,14 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/roundrobin"
-	"google.golang.org/grpc/connectivity"
-	internalserviceconfig "google.golang.org/grpc/internal/serviceconfig"
-	"google.golang.org/grpc/resolver"
-	xdsinternal "google.golang.org/grpc/xds/internal"
-	"google.golang.org/grpc/xds/internal/testutils"
-	"google.golang.org/grpc/xds/internal/testutils/fakeclient"
+	"google.golang.org/grpc/v2/balancer"
+	"google.golang.org/grpc/v2/balancer/roundrobin"
+	"google.golang.org/grpc/v2/connectivity"
+	internalserviceconfig "google.golang.org/grpc/v2/internal/serviceconfig"
+	"google.golang.org/grpc/v2/resolver"
+	xdsinternal "google.golang.org/grpc/v2/xds/internal"
+	"google.golang.org/grpc/v2/xds/internal/testutils"
+	"google.golang.org/grpc/v2/xds/internal/testutils/fakeclient"
 )
 
 const defaultTestTimeout = 1 * time.Second

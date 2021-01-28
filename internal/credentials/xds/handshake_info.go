@@ -27,10 +27,10 @@ import (
 	"fmt"
 	"sync"
 
-	"google.golang.org/grpc/attributes"
-	"google.golang.org/grpc/credentials/tls/certprovider"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpc/v2/attributes"
+	"google.golang.org/grpc/v2/credentials/tls/certprovider"
+	"google.golang.org/grpc/v2/internal"
+	"google.golang.org/grpc/v2/resolver"
 )
 
 func init() {

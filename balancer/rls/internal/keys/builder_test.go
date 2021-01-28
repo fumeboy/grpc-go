@@ -24,8 +24,8 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	rlspb "google.golang.org/grpc/balancer/rls/internal/proto/grpc_lookup_v1"
-	"google.golang.org/grpc/metadata"
+	rlspb "google.golang.org/grpc/v2/balancer/rls/internal/proto/grpc_lookup_v1"
+	"google.golang.org/grpc/v2/metadata"
 )
 
 var (

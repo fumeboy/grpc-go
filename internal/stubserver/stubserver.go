@@ -26,13 +26,13 @@ import (
 	"net"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/resolver/manual"
-	"google.golang.org/grpc/serviceconfig"
+	"google.golang.org/grpc/v2"
+	"google.golang.org/grpc/v2/connectivity"
+	"google.golang.org/grpc/v2/resolver"
+	"google.golang.org/grpc/v2/resolver/manual"
+	"google.golang.org/grpc/v2/serviceconfig"
 
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	testpb "google.golang.org/grpc/v2/test/grpc_testing"
 )
 
 // StubServer is a server that is easy to customize within individual test

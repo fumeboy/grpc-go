@@ -24,12 +24,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"google.golang.org/grpc/codes"
-	iresolver "google.golang.org/grpc/internal/resolver"
-	"google.golang.org/grpc/internal/wrr"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/xds/internal/balancer/clustermanager"
-	"google.golang.org/grpc/xds/internal/env"
+	"google.golang.org/grpc/v2/codes"
+	iresolver "google.golang.org/grpc/v2/internal/resolver"
+	"google.golang.org/grpc/v2/internal/wrr"
+	"google.golang.org/grpc/v2/status"
+	"google.golang.org/grpc/v2/xds/internal/balancer/clustermanager"
+	"google.golang.org/grpc/v2/xds/internal/env"
 )
 
 const (

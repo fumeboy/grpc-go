@@ -26,8 +26,8 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/serviceconfig"
+	"google.golang.org/grpc/v2/balancer"
+	"google.golang.org/grpc/v2/serviceconfig"
 )
 
 type parseTestCase struct {

@@ -22,7 +22,7 @@ package proto
 
 import (
 	"github.com/golang/protobuf/proto"
-	"google.golang.org/grpc/encoding"
+	"google.golang.org/grpc/v2/encoding"
 )
 
 // Name is the name registered for the proto compressor.

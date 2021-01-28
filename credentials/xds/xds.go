@@ -34,9 +34,9 @@ import (
 	"net"
 	"time"
 
-	"google.golang.org/grpc/credentials"
-	credinternal "google.golang.org/grpc/internal/credentials"
-	xdsinternal "google.golang.org/grpc/internal/credentials/xds"
+	"google.golang.org/grpc/v2/credentials"
+	credinternal "google.golang.org/grpc/v2/internal/credentials"
+	xdsinternal "google.golang.org/grpc/v2/internal/credentials/xds"
 )
 
 // ClientOptions contains parameters to configure a new client-side xDS

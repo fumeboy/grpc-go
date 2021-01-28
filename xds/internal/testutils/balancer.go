@@ -25,9 +25,9 @@ import (
 	"fmt"
 	"testing"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpc/v2/balancer"
+	"google.golang.org/grpc/v2/connectivity"
+	"google.golang.org/grpc/v2/resolver"
 )
 
 // TestSubConnsCount is the number of TestSubConns initialized as part of

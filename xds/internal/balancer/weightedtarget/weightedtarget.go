@@ -23,14 +23,14 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/hierarchy"
-	"google.golang.org/grpc/internal/wrr"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
-	"google.golang.org/grpc/xds/internal/balancer/balancergroup"
-	"google.golang.org/grpc/xds/internal/balancer/weightedtarget/weightedaggregator"
+	"google.golang.org/grpc/v2/balancer"
+	"google.golang.org/grpc/v2/internal/grpclog"
+	"google.golang.org/grpc/v2/internal/hierarchy"
+	"google.golang.org/grpc/v2/internal/wrr"
+	"google.golang.org/grpc/v2/resolver"
+	"google.golang.org/grpc/v2/serviceconfig"
+	"google.golang.org/grpc/v2/xds/internal/balancer/balancergroup"
+	"google.golang.org/grpc/v2/xds/internal/balancer/weightedtarget/weightedaggregator"
 )
 
 const weightedTargetName = "weighted_target_experimental"

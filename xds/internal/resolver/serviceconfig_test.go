@@ -22,7 +22,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	_ "google.golang.org/grpc/xds/internal/balancer/cdsbalancer" // To parse LB config
+	_ "google.golang.org/grpc/v2/xds/internal/balancer/cdsbalancer" // To parse LB config
 )
 
 func (s) TestPruneActiveClusters(t *testing.T) {

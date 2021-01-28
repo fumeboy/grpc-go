@@ -36,11 +36,11 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/tls/certprovider"
-	meshgrpc "google.golang.org/grpc/credentials/tls/certprovider/meshca/internal/v1"
-	meshpb "google.golang.org/grpc/credentials/tls/certprovider/meshca/internal/v1"
-	"google.golang.org/grpc/internal/testutils"
+	"google.golang.org/grpc/v2"
+	"google.golang.org/grpc/v2/credentials/tls/certprovider"
+	"google.golang.org/grpc/v2/internal/testutils"
+	meshgrpc "google.golang.org/grpc/v2/v2/credentials/tls/certprovider/meshca/internal/v1"
+	meshpb "google.golang.org/grpc/v2/v2/credentials/tls/certprovider/meshca/internal/v1"
 )
 
 const (

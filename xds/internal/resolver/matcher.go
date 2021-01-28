@@ -23,11 +23,11 @@ import (
 	"regexp"
 	"strings"
 
-	"google.golang.org/grpc/internal/grpcrand"
-	"google.golang.org/grpc/internal/grpcutil"
-	iresolver "google.golang.org/grpc/internal/resolver"
-	"google.golang.org/grpc/metadata"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
+	"google.golang.org/grpc/v2/internal/grpcrand"
+	"google.golang.org/grpc/v2/internal/grpcutil"
+	iresolver "google.golang.org/grpc/v2/internal/resolver"
+	"google.golang.org/grpc/v2/metadata"
+	xdsclient "google.golang.org/grpc/v2/xds/internal/client"
 )
 
 func routeToMatcher(r *xdsclient.Route) (*compositeMatcher, error) {

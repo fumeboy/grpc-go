@@ -27,17 +27,17 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/resolver/manual"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/tap"
-	testpb "google.golang.org/grpc/test/grpc_testing"
-	"google.golang.org/grpc/testdata"
+	"google.golang.org/grpc/v2"
+	"google.golang.org/grpc/v2/codes"
+	"google.golang.org/grpc/v2/connectivity"
+	"google.golang.org/grpc/v2/credentials"
+	"google.golang.org/grpc/v2/metadata"
+	"google.golang.org/grpc/v2/resolver"
+	"google.golang.org/grpc/v2/resolver/manual"
+	"google.golang.org/grpc/v2/status"
+	"google.golang.org/grpc/v2/tap"
+	testpb "google.golang.org/grpc/v2/test/grpc_testing"
+	"google.golang.org/grpc/v2/testdata"
 )
 
 const (

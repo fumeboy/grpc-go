@@ -32,9 +32,9 @@ import (
 	cpb "google.golang.org/genproto/googleapis/rpc/code"
 	epb "google.golang.org/genproto/googleapis/rpc/errdetails"
 	spb "google.golang.org/genproto/googleapis/rpc/status"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/status"
+	"google.golang.org/grpc/v2/codes"
+	"google.golang.org/grpc/v2/internal/grpctest"
+	"google.golang.org/grpc/v2/internal/status"
 )
 
 type s struct {

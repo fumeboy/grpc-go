@@ -20,8 +20,8 @@
 package balancer
 
 import (
-	_ "google.golang.org/grpc/xds/internal/balancer/cdsbalancer"    // Register the CDS balancer
-	_ "google.golang.org/grpc/xds/internal/balancer/clustermanager" // Register the xds_cluster_manager balancer
-	_ "google.golang.org/grpc/xds/internal/balancer/edsbalancer"    // Register the EDS balancer
-	_ "google.golang.org/grpc/xds/internal/balancer/weightedtarget" // Register the weighted_target balancer
+	_ "google.golang.org/grpc/v2/xds/internal/balancer/cdsbalancer"    // Register the CDS balancer
+	_ "google.golang.org/grpc/v2/xds/internal/balancer/clustermanager" // Register the xds_cluster_manager balancer
+	_ "google.golang.org/grpc/v2/xds/internal/balancer/edsbalancer"    // Register the EDS balancer
+	_ "google.golang.org/grpc/v2/xds/internal/balancer/weightedtarget" // Register the weighted_target balancer
 )

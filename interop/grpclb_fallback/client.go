@@ -32,14 +32,14 @@ import (
 	"time"
 
 	"golang.org/x/sys/unix"
-	"google.golang.org/grpc"
-	_ "google.golang.org/grpc/balancer/grpclb"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/alts"
-	"google.golang.org/grpc/credentials/google"
+	"google.golang.org/grpc/v2"
+	_ "google.golang.org/grpc/v2/balancer/grpclb"
+	"google.golang.org/grpc/v2/credentials"
+	"google.golang.org/grpc/v2/credentials/alts"
+	"google.golang.org/grpc/v2/credentials/google"
 
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
+	testgrpc "google.golang.org/grpc/v2/v2/interop/grpc_testing"
+	testpb "google.golang.org/grpc/v2/v2/interop/grpc_testing"
 )
 
 var (

@@ -21,7 +21,7 @@ package grpcsync
 import (
 	"testing"
 
-	"google.golang.org/grpc/internal/grpctest"
+	"google.golang.org/grpc/v2/internal/grpctest"
 )
 
 type s struct {

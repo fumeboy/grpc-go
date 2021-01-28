@@ -24,8 +24,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/xds/internal"
+	"google.golang.org/grpc/v2/internal/testutils"
+	"google.golang.org/grpc/v2/xds/internal"
 )
 
 var (

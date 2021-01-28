@@ -23,7 +23,7 @@ package service
 import (
 	"sync"
 
-	grpc "google.golang.org/grpc"
+	grpc "google.golang.org/grpc/v2"
 )
 
 var (

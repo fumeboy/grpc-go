@@ -27,12 +27,12 @@ import (
 	"os"
 	"strconv"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/metadata"
+	"google.golang.org/grpc/v2"
+	"google.golang.org/grpc/v2/grpclog"
+	"google.golang.org/grpc/v2/metadata"
 
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
+	testgrpc "google.golang.org/grpc/v2/v2/interop/grpc_testing"
+	testpb "google.golang.org/grpc/v2/v2/interop/grpc_testing"
 )
 
 var (

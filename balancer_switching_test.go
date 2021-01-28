@@ -25,12 +25,12 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/roundrobin"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/resolver/manual"
-	"google.golang.org/grpc/serviceconfig"
+	"google.golang.org/grpc/v2/balancer"
+	"google.golang.org/grpc/v2/balancer/roundrobin"
+	"google.golang.org/grpc/v2/internal"
+	"google.golang.org/grpc/v2/resolver"
+	"google.golang.org/grpc/v2/resolver/manual"
+	"google.golang.org/grpc/v2/serviceconfig"
 )
 
 var _ balancer.Builder = &magicalLB{}

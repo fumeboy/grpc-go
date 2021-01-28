@@ -23,7 +23,7 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc/internal/grpcrand"
+	"google.golang.org/grpc/v2/internal/grpcrand"
 )
 
 // For overriding in unittests.

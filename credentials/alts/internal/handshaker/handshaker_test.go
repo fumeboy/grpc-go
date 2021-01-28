@@ -24,11 +24,11 @@ import (
 	"testing"
 	"time"
 
-	grpc "google.golang.org/grpc"
-	core "google.golang.org/grpc/credentials/alts/internal"
-	altspb "google.golang.org/grpc/credentials/alts/internal/proto/grpc_gcp"
-	"google.golang.org/grpc/credentials/alts/internal/testutil"
-	"google.golang.org/grpc/internal/grpctest"
+	grpc "google.golang.org/grpc/v2"
+	core "google.golang.org/grpc/v2/credentials/alts/internal"
+	altspb "google.golang.org/grpc/v2/credentials/alts/internal/proto/grpc_gcp"
+	"google.golang.org/grpc/v2/credentials/alts/internal/testutil"
+	"google.golang.org/grpc/v2/internal/grpctest"
 )
 
 type s struct {

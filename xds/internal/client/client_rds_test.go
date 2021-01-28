@@ -33,7 +33,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 
-	"google.golang.org/grpc/xds/internal/version"
+	"google.golang.org/grpc/v2/xds/internal/version"
 	"google.golang.org/protobuf/types/known/durationpb"
 )
 

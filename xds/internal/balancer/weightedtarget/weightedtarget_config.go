@@ -21,8 +21,8 @@ package weightedtarget
 import (
 	"encoding/json"
 
-	internalserviceconfig "google.golang.org/grpc/internal/serviceconfig"
-	"google.golang.org/grpc/serviceconfig"
+	internalserviceconfig "google.golang.org/grpc/v2/internal/serviceconfig"
+	"google.golang.org/grpc/v2/serviceconfig"
 )
 
 type target struct {

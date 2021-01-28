@@ -28,18 +28,18 @@ import (
 	lrspb "github.com/envoyproxy/go-control-plane/envoy/service/load_stats/v2"
 	durationpb "github.com/golang/protobuf/ptypes/duration"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
-	"google.golang.org/grpc/xds/internal/testutils/fakeserver"
-	"google.golang.org/grpc/xds/internal/version"
+	"google.golang.org/grpc/v2"
+	"google.golang.org/grpc/v2/codes"
+	"google.golang.org/grpc/v2/credentials/insecure"
+	"google.golang.org/grpc/v2/internal/grpctest"
+	"google.golang.org/grpc/v2/status"
+	"google.golang.org/grpc/v2/xds/internal/client"
+	"google.golang.org/grpc/v2/xds/internal/client/bootstrap"
+	"google.golang.org/grpc/v2/xds/internal/testutils/fakeserver"
+	"google.golang.org/grpc/v2/xds/internal/version"
 	"google.golang.org/protobuf/testing/protocmp"
 
-	_ "google.golang.org/grpc/xds/internal/client/v2" // Register the v2 xDS API client.
+	_ "google.golang.org/grpc/v2/xds/internal/client/v2" // Register the v2 xDS API client.
 )
 
 const (

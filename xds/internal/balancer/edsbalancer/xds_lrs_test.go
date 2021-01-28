@@ -22,8 +22,8 @@ import (
 	"context"
 	"testing"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/xds/internal/testutils/fakeclient"
+	"google.golang.org/grpc/v2/balancer"
+	"google.golang.org/grpc/v2/xds/internal/testutils/fakeclient"
 )
 
 // TestXDSLoadReporting verifies that the edsBalancer starts the loadReport

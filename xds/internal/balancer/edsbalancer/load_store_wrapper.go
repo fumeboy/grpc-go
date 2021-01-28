@@ -21,7 +21,7 @@ package edsbalancer
 import (
 	"sync"
 
-	"google.golang.org/grpc/xds/internal/client/load"
+	"google.golang.org/grpc/v2/xds/internal/client/load"
 )
 
 type loadStoreWrapper struct {

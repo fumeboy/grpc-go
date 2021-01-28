@@ -25,9 +25,9 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/backoff"
+	"google.golang.org/grpc/v2/balancer"
+	"google.golang.org/grpc/v2/grpclog"
+	"google.golang.org/grpc/v2/internal/backoff"
 )
 
 var logger = grpclog.Component("rls")

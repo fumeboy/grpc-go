@@ -31,8 +31,8 @@ import (
 	anypb "github.com/golang/protobuf/ptypes/any"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"google.golang.org/grpc/xds/internal/env"
-	"google.golang.org/grpc/xds/internal/version"
+	"google.golang.org/grpc/v2/xds/internal/env"
+	"google.golang.org/grpc/v2/xds/internal/version"
 	"google.golang.org/protobuf/types/known/wrapperspb"
 )
 

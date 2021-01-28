@@ -25,11 +25,11 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	statuspb "google.golang.org/genproto/googleapis/rpc/status"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/grpclog"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/version"
+	"google.golang.org/grpc/v2"
+	"google.golang.org/grpc/v2/codes"
+	"google.golang.org/grpc/v2/internal/grpclog"
+	xdsclient "google.golang.org/grpc/v2/xds/internal/client"
+	"google.golang.org/grpc/v2/xds/internal/version"
 
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 	v3adsgrpc "github.com/envoyproxy/go-control-plane/envoy/service/discovery/v3"

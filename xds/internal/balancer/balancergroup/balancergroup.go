@@ -24,13 +24,13 @@ import (
 	"time"
 
 	orcapb "github.com/cncf/udpa/go/udpa/data/orca/v1"
-	"google.golang.org/grpc/xds/internal/client/load"
+	"google.golang.org/grpc/v2/xds/internal/client/load"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/cache"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpc/v2/balancer"
+	"google.golang.org/grpc/v2/connectivity"
+	"google.golang.org/grpc/v2/internal/cache"
+	"google.golang.org/grpc/v2/internal/grpclog"
+	"google.golang.org/grpc/v2/resolver"
 )
 
 // subBalancerWrapper is used to keep the configurations that will be used to start

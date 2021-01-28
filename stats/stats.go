@@ -26,7 +26,7 @@ import (
 	"net"
 	"time"
 
-	"google.golang.org/grpc/metadata"
+	"google.golang.org/grpc/v2/metadata"
 )
 
 // RPCStats contains stats information about RPCs.

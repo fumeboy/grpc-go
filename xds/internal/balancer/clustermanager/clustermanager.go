@@ -23,13 +23,13 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/grpclog"
-	internalgrpclog "google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/hierarchy"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
-	"google.golang.org/grpc/xds/internal/balancer/balancergroup"
+	"google.golang.org/grpc/v2/balancer"
+	"google.golang.org/grpc/v2/grpclog"
+	internalgrpclog "google.golang.org/grpc/v2/internal/grpclog"
+	"google.golang.org/grpc/v2/internal/hierarchy"
+	"google.golang.org/grpc/v2/resolver"
+	"google.golang.org/grpc/v2/serviceconfig"
+	"google.golang.org/grpc/v2/xds/internal/balancer/balancergroup"
 )
 
 const balancerName = "xds_cluster_manager_experimental"

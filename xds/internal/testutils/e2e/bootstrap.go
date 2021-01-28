@@ -24,7 +24,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"google.golang.org/grpc/xds/internal/env"
+	"google.golang.org/grpc/v2/xds/internal/env"
 )
 
 // TransportAPI refers to the API version for xDS transport protocol.

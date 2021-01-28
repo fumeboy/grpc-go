@@ -24,12 +24,12 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
+	"google.golang.org/grpc/v2/balancer"
+	"google.golang.org/grpc/v2/credentials"
+	"google.golang.org/grpc/v2/internal/channelz"
+	"google.golang.org/grpc/v2/internal/grpcsync"
+	"google.golang.org/grpc/v2/resolver"
+	"google.golang.org/grpc/v2/serviceconfig"
 )
 
 // ccResolverWrapper is a wrapper on top of cc for resolvers.

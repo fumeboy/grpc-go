@@ -27,10 +27,10 @@ import (
 	"net"
 	"time"
 
-	"google.golang.org/grpc"
-	rlsgrpc "google.golang.org/grpc/balancer/rls/internal/proto/grpc_lookup_v1"
-	rlspb "google.golang.org/grpc/balancer/rls/internal/proto/grpc_lookup_v1"
-	"google.golang.org/grpc/internal/testutils"
+	"google.golang.org/grpc/v2"
+	"google.golang.org/grpc/v2/internal/testutils"
+	rlsgrpc "google.golang.org/grpc/v2/v2/balancer/rls/internal/proto/grpc_lookup_v1"
+	rlspb "google.golang.org/grpc/v2/v2/balancer/rls/internal/proto/grpc_lookup_v1"
 )
 
 const (

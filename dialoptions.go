@@ -24,16 +24,16 @@ import (
 	"net"
 	"time"
 
-	"google.golang.org/grpc/backoff"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal"
-	internalbackoff "google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/stats"
+	"google.golang.org/grpc/v2/backoff"
+	"google.golang.org/grpc/v2/balancer"
+	"google.golang.org/grpc/v2/credentials"
+	"google.golang.org/grpc/v2/internal"
+	internalbackoff "google.golang.org/grpc/v2/internal/backoff"
+	"google.golang.org/grpc/v2/internal/envconfig"
+	"google.golang.org/grpc/v2/internal/transport"
+	"google.golang.org/grpc/v2/keepalive"
+	"google.golang.org/grpc/v2/resolver"
+	"google.golang.org/grpc/v2/stats"
 )
 
 // dialOptions configure a Dial call. dialOptions are set by the DialOption

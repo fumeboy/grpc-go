@@ -21,9 +21,9 @@ package clustermanager
 import (
 	"context"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpc/v2/balancer"
+	"google.golang.org/grpc/v2/codes"
+	"google.golang.org/grpc/v2/status"
 )
 
 // pickerGroup contains a list of pickers. If the picker isn't ready, the pick

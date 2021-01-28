@@ -26,8 +26,8 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/internal/grpctest"
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	"google.golang.org/grpc/v2/internal/grpctest"
+	testpb "google.golang.org/grpc/v2/test/grpc_testing"
 )
 
 const (

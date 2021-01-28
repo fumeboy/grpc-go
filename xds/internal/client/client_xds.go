@@ -36,10 +36,10 @@ import (
 	"github.com/golang/protobuf/proto"
 	anypb "github.com/golang/protobuf/ptypes/any"
 
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/xds/internal"
-	"google.golang.org/grpc/xds/internal/env"
-	"google.golang.org/grpc/xds/internal/version"
+	"google.golang.org/grpc/v2/internal/grpclog"
+	"google.golang.org/grpc/v2/xds/internal"
+	"google.golang.org/grpc/v2/xds/internal/env"
+	"google.golang.org/grpc/v2/xds/internal/version"
 )
 
 // TransportSocket proto message has a `name` field which is expected to be set

@@ -48,10 +48,10 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	dpb "github.com/golang/protobuf/protoc-gen-go/descriptor"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	rpb "google.golang.org/grpc/reflection/grpc_reflection_v1alpha"
-	"google.golang.org/grpc/status"
+	"google.golang.org/grpc/v2"
+	"google.golang.org/grpc/v2/codes"
+	rpb "google.golang.org/grpc/v2/reflection/grpc_reflection_v1alpha"
+	"google.golang.org/grpc/v2/status"
 )
 
 type serverReflectionServer struct {

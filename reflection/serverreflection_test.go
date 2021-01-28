@@ -29,11 +29,11 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	dpb "github.com/golang/protobuf/protoc-gen-go/descriptor"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/internal/grpctest"
-	rpb "google.golang.org/grpc/reflection/grpc_reflection_v1alpha"
-	pb "google.golang.org/grpc/reflection/grpc_testing"
-	pbv3 "google.golang.org/grpc/reflection/grpc_testingv3"
+	"google.golang.org/grpc/v2"
+	"google.golang.org/grpc/v2/internal/grpctest"
+	rpb "google.golang.org/grpc/v2/reflection/grpc_reflection_v1alpha"
+	pb "google.golang.org/grpc/v2/reflection/grpc_testing"
+	pbv3 "google.golang.org/grpc/v2/reflection/grpc_testingv3"
 )
 
 var (

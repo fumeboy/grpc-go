@@ -32,8 +32,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/testutils"
+	"google.golang.org/grpc/v2/internal/grpctest"
+	"google.golang.org/grpc/v2/internal/testutils"
 )
 
 const (
