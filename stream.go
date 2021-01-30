@@ -1545,10 +1545,14 @@ func (ss *serverStream) RecvMsg(m interface{}) (err error) {
 }
 
 type ServerStreamRedirect interface {
-	Redirect(conn *ClientConn, fullMethodName string) error
+	Redirect(conn *ClientConn) error
 }
 
-func (ss *serverStream) Redirect(conn *ClientConn, fullMethodName string) error {
+func (ss *serverStream) Redirect(conn *ClientConn) error {
+	fullMethodName, ok := MethodFromServerStream(ss)
+	if !ok {
+		return status.Errorf(codes.Internal, "failed to get method from server stream")
+	}
 	redirectTo, err := NewClientStream(ss.ctx, &StreamDesc{
 		ServerStreams: true,
 		ClientStreams: true,
